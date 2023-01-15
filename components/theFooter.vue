@@ -1,28 +1,29 @@
 <template>
   <footer class="w-full bg-gray-200 mt-4">
     <div class="container py-3 flex flex-col gap-4">
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
-        <div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-4">
+        <div class="flex flex-col gap-2">
           <img
             src="~/assets/img/logo.png"
             alt=""
             class=" w-full max-w-[120px] h-auto"
           />
+          <span class="text-sm">Политика конфедициальности</span>
         </div>
         <div class="flex flex-col gap-4">
           <span class="text-xl font-semibold">KIBERone</span>
           <ul class="text-sm flex flex-col gap-2">
             <li>
-              <a href="https://stav.kiber-one.com" target="_blank">Федеральный сайт</a>
+              <a href="https://stav.kiber-one.com" target="_blank"
+                >Федеральный сайт</a
+              >
             </li>
             <li>
-              <a href="https://stav.kiber-one.com/o-kibershkole/" target="_blank">О КиберШколе</a>
-            </li>
-            <li>
-              <a href="https://stav.kiber-one.com/o-kibershkole/raspisanie/" target="_blank">Расписание</a>
-            </li>
-            <li>
-              <a href="https://stav.kiber-one.com/prepodavateli/" target="_blank">Тьюторы</a>
+              <a
+                href="https://stav.kiber-one.com/o-kibershkole/"
+                target="_blank"
+                >О КиберШколе</a
+              >
             </li>
           </ul>
         </div>
@@ -65,6 +66,12 @@
 
               <span href="#">stavropol@kiber-one.com</span>
             </li>
+           
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="text-xl font-semibold">Адреса</span>
+          <ul class="text-sm flex flex-col gap-2">
             <li class="flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,16 +84,54 @@
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                 />
               </svg>
 
-              <a href="https://stav.kiber-one.com/o-kibershkole/lokacii/">Локации в Ставрополе</a>
+              <a
+                href="https://2gis.ru/stavropol/firm/70000001050871846"
+                target="_blank"
+                >​Ленина, 282</a
+              >
+            </li>
+            <li class="flex items-center gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+
+              <a
+                href="https://2gis.ru/stavropol/firm/70000001064865342"
+                target="_blank"
+                >​50 лет ВЛКСМ, 68</a
+              >
             </li>
           </ul>
         </div>
       </div>
-      <span class="text-xs w-full text-center opacity-80">Copyright © 2023  Все права защищены</span>
+      <span class="text-xs w-full text-center opacity-80"
+        >Copyright © 2023 Все права защищены</span
+      >
     </div>
   </footer>
 </template>

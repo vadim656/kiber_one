@@ -1,14 +1,20 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'front',
+    title:
+      'IT-школа программирования для детей в Ставрополе | КиберШкола IT технологий KIBERone',
     htmlAttrs: {
       lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Выбирай курс программирования для школьников и подростков в Ставрополе! Наша международная КиберШкола — лучший проект в сфере IT (АЙТИ) технологий для детей! Приходи на занятия в ИТ-кружок KIBERone!'
+      },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

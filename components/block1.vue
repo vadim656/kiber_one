@@ -14,7 +14,7 @@
           class="flex flex-col gap-4 justify-center items-center py-2 sm:py-0"
         >
           <span class="text-2xl font-bold text-center text-white">Чему научится ребенок?</span>
-          <span @click="scroll1" class="text-white" target="_blank">Подробнее</span>
+          <span @click="scroll1" class="text-white cursor-pointer" target="_blank">Подробнее</span>
         </div>
         <div
           class="flex flex-col gap-4 justify-center items-center py-2 sm:py-0"
@@ -26,7 +26,7 @@
           class="flex flex-col gap-4 justify-center items-center py-2 sm:py-0"
         >
           <span class="text-2xl font-bold text-center text-white">Бесплатное пробное занятие</span>
-          <span @click="openmodal2" class="text-white" >Подробнее</span>
+          <span @click="openmodal2" class="text-white cursor-pointer" >Подробнее</span>
         </div>
         
       </div>
