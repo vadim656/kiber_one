@@ -124,19 +124,26 @@ export default {
     }
   },
   methods: {
+    YMEventOpenModal() {
+      this.$yandexMetrika.reachGoal('open-modal-header');
+    },
+    YMEventSendTgModal() {
+      this.$yandexMetrika.reachGoal('modal-form-tg');
+    },
     scroll1 () {
       setTimeout(() => {
         let scrollDiv = document.getElementById('block2').offsetTop - 90
         window.scrollTo({ top: scrollDiv, behavior: 'smooth' })
-        console.log(scrollDiv.offsetTop - 50)
       }, 300)
     },
     openModal () {
       this.$refs.modalForm.active = true
+      this.YMEventOpenModal()
+
     },
     openmodal2 () {
       this.$refs.modalForm.active = true
-      console.log('opn');
+      this.sendYandexMetrikaEvent()
     },
     plus () {
       if (this.form.vozrast < 14) {
@@ -172,6 +179,7 @@ export default {
           this.form.name = ''
           this.succes = true
           setTimeout(() => (this.$refs.modalForm.active = false, this.succes = false), 1000)
+          this.YMEventSendTgModal()
         })
         .catch(e => {
           this.errors.push(e)

@@ -131,6 +131,9 @@ export default {
     }
   },
   methods: {
+    YMEventSendTgFooter() {
+      this.$yandexMetrika.reachGoal('footer-form-tg');
+    },
     plus () {
       if (this.form.vozrast < 14) {
         this.form.vozrast++
@@ -166,6 +169,7 @@ export default {
           
           this.succes = true
           setTimeout(() => (this.succes = false), 1000)
+          this.YMEventSendTgFooter()
         })
         .catch(e => {
           this.errors.push(e)

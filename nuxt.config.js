@@ -45,7 +45,18 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    [
+      '@rkaliev/nuxtjs-yandex-metrika',
+      {
+        id: '92061500',
+        webvisor: true,
+        clickmap: true,
+        debug: false,
+        noJS: true,
+        disabled: false,
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
