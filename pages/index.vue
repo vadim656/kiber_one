@@ -69,10 +69,14 @@
         >
           <span class=" pb-[1px] text-purple-500 font-bold">ОТПРАВИТЬ</span>
         </button>
-        <span v-if="succes == true" class="text-center text-sm ">Спасибо! Наш менеджер перезвонит Вам в течение 15 минут.</span>
+        <span v-if="succes == true" class="text-center text-sm "
+          >Спасибо! Наш менеджер перезвонит Вам в течение 15 минут.</span
+        >
         <span class="text-slate-400 text-xs text-center"
-          >Нажимая "Отправить", вы соглашаетесь с Политикой обработки
-          персональных данных</span
+          >Нажимая "Отправить", вы соглашаетесь с
+          <nuxt-link to="/privacy" class="text-slate-400 text-xs text-center underline"
+            >Политикой обработки персональных данных</nuxt-link
+          ></span
         >
       </div>
     </f-modal>
@@ -124,11 +128,11 @@ export default {
     }
   },
   methods: {
-    YMEventOpenModal() {
-      this.$yandexMetrika.reachGoal('open-modal-header');
+    YMEventOpenModal () {
+      this.$yandexMetrika.reachGoal('open-modal-header')
     },
-    YMEventSendTgModal() {
-      this.$yandexMetrika.reachGoal('modal-form-tg');
+    YMEventSendTgModal () {
+      this.$yandexMetrika.reachGoal('modal-form-tg')
     },
     scroll1 () {
       setTimeout(() => {
@@ -139,7 +143,6 @@ export default {
     openModal () {
       this.$refs.modalForm.active = true
       this.YMEventOpenModal()
-
     },
     openmodal2 () {
       this.$refs.modalForm.active = true
@@ -178,7 +181,12 @@ export default {
           this.form.phone = ''
           this.form.name = ''
           this.succes = true
-          setTimeout(() => (this.$refs.modalForm.active = false, this.succes = false), 1000)
+          setTimeout(
+            () => (
+              (this.$refs.modalForm.active = false), (this.succes = false)
+            ),
+            1000
+          )
           this.YMEventSendTgModal()
         })
         .catch(e => {

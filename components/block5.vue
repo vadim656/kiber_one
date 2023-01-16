@@ -99,9 +99,11 @@
             >Спасибо! Наш менеджер перезвонит Вам в течение 15 минут.</span
           >
           <span class="text-slate-400 text-xs"
-            >Нажимая "Отправить", вы соглашаетесь с Политикой обработки
-            персональных данных</span
-          >
+            >Нажимая "Отправить", вы соглашаетесь с
+            <nuxt-link to="/privacy" class="text-slate-400 text-xs text-center underline"
+              >Политикой обработки персональных данных</nuxt-link
+            >
+          </span>
         </div>
       </div>
     </div>
@@ -131,8 +133,8 @@ export default {
     }
   },
   methods: {
-    YMEventSendTgFooter() {
-      this.$yandexMetrika.reachGoal('footer-form-tg');
+    YMEventSendTgFooter () {
+      this.$yandexMetrika.reachGoal('footer-form-tg')
     },
     plus () {
       if (this.form.vozrast < 14) {
@@ -166,7 +168,7 @@ export default {
         .then(response => {
           this.form.phone = ''
           this.form.name = ''
-          
+
           this.succes = true
           setTimeout(() => (this.succes = false), 1000)
           this.YMEventSendTgFooter()

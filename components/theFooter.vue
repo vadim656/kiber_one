@@ -8,7 +8,7 @@
             alt=""
             class=" w-full max-w-[120px] h-auto"
           />
-          <span class="text-sm">Политика конфедициальности</span>
+          <nuxt-link to="/privacy" class="text-sm">Политика конфедициальности</nuxt-link>
         </div>
         <div class="flex flex-col gap-4">
           <span class="text-xl font-semibold">KIBERone</span>
