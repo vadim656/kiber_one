@@ -146,7 +146,7 @@ export default {
     },
     openmodal2 () {
       this.$refs.modalForm.active = true
-      this.sendYandexMetrikaEvent()
+      this.YMEventSendTgModal()
     },
     plus () {
       if (this.form.vozrast < 14) {
