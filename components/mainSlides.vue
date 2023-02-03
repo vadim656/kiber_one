@@ -41,21 +41,21 @@
     </div>
   </div> -->
   <div
-    class="w-full py-4 flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-24 py-10"
+    class="w-full  flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-24 py-10"
   >
     <img
       src="~/assets/img/Frame2.jpg"
       alt=""
-      class="rounded-full  w-[300px]  h-[300px]  absolute top-40 left-10"
+      class="rounded-full w-[200px]  h-[200px]  sm:w-[300px]  sm:h-[300px]  absolute top-[300px] sm:top-40 -left-10 sm:left-10"
     />
 
     <div class="flex flex-col   justify-center gap-20 items-center z-[1] pt-6">
       <div class="flex flex-col gap-2">
         <span
-          class="text-3xl sm:text-4xl lg:text-7xl font-bold text-center text-purple-500 uppercase"
+          class="text-4xl lg:text-7xl font-bold text-center text-purple-500 uppercase"
           >IT-школа
         </span>
-        <span class="text-2xl  lg:text-3xl font-bold text-center text-neutral-900 uppercase">для детей от 6 до 14 лет</span>
+        <span class="text-xl  lg:text-3xl font-bold text-center text-neutral-900 uppercase">для детей от 6 до 14 лет</span>
         
       </div>
       <button
@@ -83,12 +83,12 @@
     <img
       src="~/assets/img/Frame1.jpg"
       alt=""
-      class="rounded-full w-[250px] h-[250px] absolute top-24 right-20"
+      class="rounded-full w-[150px] h-[150px]  sm:w-[250px] sm:h-[250px] absolute top-24 -right-10 sm:right-20"
     />
     <img
       src="~/assets/img/Frame3.jpg"
       alt=""
-      class="rounded-full w-[150px] h-[150px] absolute top-72 right-[25%]"
+      class="rounded-full w-[150px] h-[150px] absolute top-72 -right-20 sm:right-[25%]"
     />
   </div>
 </template>

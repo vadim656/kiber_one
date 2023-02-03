@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#FBF8FB] relative">
+  <div class="bg-[#FBF8FB] relative overflow-hidden">
     <f-modal ref="modalForm">
       <div class="grid grid-cols-1 gap-3 w-full max-w-[300px]">
         <div class="flex flex-col gap-1">
