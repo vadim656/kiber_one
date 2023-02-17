@@ -37,7 +37,7 @@
         </svg>
       </button>
       <span class="hidden sm:block text-lg font-bold text-purple-500"
-        >Бесплатная пробная неделя до 28 февраля!</span
+        >Бесплатная пробная неделя до 26 марта!</span
       >
 
       <div class="hidden sm:flex flex-col justify-end items-end">
@@ -100,7 +100,7 @@
       </div>
       <div class="flex flex-col gap-4 mt-6">
         <span class="block text-lg font-bold text-purple-500 text-center"
-          >Бесплатная пробная неделя до 28 февраля!</span
+          >Бесплатная пробная неделя до 26 марта!</span
         >
         <nuxt-link to="/contacts">Контакты</nuxt-link>
         <a

@@ -91,7 +91,7 @@
       class="container bg-[#FBF8FB] flex flex-col items-center justify-center gap-12 pt-32"
     >
       <span class="py-4 text-center"
-        >Спасибо! Наш менеджер свяжется с Вами в самое ближайшее время.</span
+        >Спасибо! Наш менеджер перезвонит Вам в течение 30 минут.</span
       >
       <nuxt-link
         to="/"
