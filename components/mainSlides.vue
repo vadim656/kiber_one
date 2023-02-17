@@ -56,7 +56,7 @@
           >IT-школа
         </span>
         <span class="text-xl  lg:text-3xl font-bold text-center text-neutral-900 uppercase">для детей от 6 до 14 лет</span>
-        
+        <span class="text-xl  font-bold text-center text-neutral-900 ">вместо игр, TikTok, YouTube</span>
       </div>
       <button
         @click="openmodal"
@@ -88,7 +88,7 @@
     <img
       src="~/assets/img/Frame3.jpg"
       alt=""
-      class="rounded-full w-[150px] h-[150px] absolute top-72 -right-20 sm:right-[25%]"
+      class="rounded-full w-[150px] h-[150px] absolute top-72 -right-20 sm:right-[22%]"
     />
   </div>
 </template>

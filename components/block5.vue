@@ -71,7 +71,7 @@
 
             <span
               @click="getTeelegrammToMain()"
-              class=" pb-[1px] text-purple-500 font-bold"
+              class="pb-[1px] text-purple-500 font-bold"
               >ОТПРАВИТЬ</span
             >
           </button>
@@ -93,14 +93,16 @@
                 d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
               />
             </svg>
-            <span class=" pb-[1px] text-purple-500 font-bold">ОТПРАВИТЬ</span>
+            <span class="pb-[1px] text-purple-500 font-bold">ОТПРАВИТЬ</span>
           </button>
-          <span v-if="succes == true" class="text-center text-sm "
+          <span v-if="succes == true" class="text-center text-sm"
             >Спасибо! Наш менеджер перезвонит Вам в течение 15 минут.</span
           >
           <span class="text-slate-400 text-xs"
             >Нажимая "Отправить", вы соглашаетесь с
-            <nuxt-link to="/privacy" class="text-slate-400 text-xs text-center underline"
+            <nuxt-link
+              to="/privacy"
+              class="text-slate-400 text-xs text-center underline"
               >Политикой обработки персональных данных</nuxt-link
             >
           </span>
@@ -170,8 +172,11 @@ export default {
           this.form.name = ''
 
           this.succes = true
-          setTimeout(() => (this.succes = false), 1000)
-          this.YMEventSendTgFooter()
+          setTimeout(
+            () => ((this.succes = false), this.$router.push('/thanks')),
+            1000
+          ),
+            this.YMEventSendTgFooter()
         })
         .catch(e => {
           this.errors.push(e)

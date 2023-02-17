@@ -87,89 +87,53 @@
       </div>
     </f-modal>
     <the-header @openModal="openModal" />
-    <div class="container bg-[#FBF8FB] flex flex-col gap-10 pt-32">
-      <main-slides @openModal="openModal" />
-      <block-4 />
-      <block-2 id="block2" />
-      <block-1 @scroll1="scroll1" @openmodal2="openmodal2" />
-      <div class="flex justify-center items-center flex-col gap-8 w-full p-12 bg-yellow-400 rounded-3xl">
-        <span class="text-3xl sm:text-4xl text-center uppercase font-bold"
-          >Записаться на бесплатный пробный урок</span
-        >
-        <div class="flex flex-col sm:flex-row w-full justify-center  gap-4">
-          <input
-            v-model="form.name"
-            type="text"
-            class="border p-2 rounded-md"
-            placeholder="Имя*"
-          />
-          <input
-            v-model="form.phone"
-            type="text"
-            class="border p-2 rounded-md"
-            placeholder="Телефон*"
-            v-facade="'+7 (###) ###-##-##'"
-          />
-          <div>
-            <button
-              v-if="form.phone.length == 18 && form.name.length >= 2"
-              class="border-2 border-purple-500 text-sm sm:text-lg font-semibold px-5 py-2 rounded-md flex justify-center items-center gap-2 w-full"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 rotate-45 text-purple-500"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                />
-              </svg>
-
-              <span
-                @click="getTeelegrammToMain()"
-                class=" text-purple-500 font-bold"
-                >ОТПРАВИТЬ</span
-              >
-            </button>
-            <button
-              v-else
-              class="opacity-50 border-2 border-purple-500 text-sm sm:text-lg font-semibold px-5 py-2 rounded-md flex justify-center items-center gap-2 w-full"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 rotate-45 text-purple-500"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                />
-              </svg>
-              <span class=" text-purple-500 font-bold">ОТПРАВИТЬ</span>
-            </button>
-            <span v-if="succes == true" class="text-center text-sm"
-              >Спасибо! Наш менеджер перезвонит Вам в течение 15 минут.</span
-            >
-           
+    <div class="container bg-[#FBF8FB] flex flex-col gap-12 pt-32">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
+          <span class="w-full flex justify-center">г. Ставрополь</span>
+          <span class="flex items-center gap-1">
+            <i-map />
+            ул. Ленина, 282</span
+          >
+          <span class="flex items-center gap-1">
+            <i-map />
+            ул. 50 лет ВЛКСМ, 68</span
+          >
+        </div>
+        <div class="flex flex-col gap-2 items-center justify-center">
+          <span>Расписание</span>
+          <div class="w-full flex justify-between sm:justify-start gap-2 sm:gap-8">
+            <div class="flex flex-col gap-2">
+              <span class="font-semibold">Суббота</span>
+              <div class="flex flex-col gap-1">
+                <span class="flex items-center gap-1"
+                  ><i-time />11.00 - 13.00</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i-time />13.30 - 15.30</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i-time />16.00 - 18.00</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-semibold">Воскресенье</span>
+              <div class="flex flex-col gap-1">
+                <span class="flex items-center gap-1"
+                  ><i-time />11.00 - 13.00</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i-time />13.30 - 15.30</span
+                >
+                <span class="flex items-center gap-1"
+                  ><i-time />16.00 - 18.00</span
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <span class="text-xs"
-              >Нажимая "Отправить", вы соглашаетесь с
-              <nuxt-link to="/privacy" class="text-xs text-center underline"
-                >Политикой обработки персональных данных</nuxt-link
-              >
-            </span>
       </div>
-      <block-3 />
       <block-5 />
     </div>
     <the-footer />
@@ -178,26 +142,22 @@
 
 <script>
 import fModal from '~/components/f-modal.vue'
-import Block1 from '~/components/block1.vue'
-import Block2 from '~/components/block2.vue'
-import Block3 from '~/components/block3.vue'
-import Block4 from '~/components/block4.vue'
 import Block5 from '~/components/block5.vue'
 import MainSlides from '~/components/mainSlides.vue'
 import TheHeader from '~/components/theHeader.vue'
 import TheFooter from '~/components/theFooter.vue'
+import ITime from '~/components/icons/i-time.vue'
+import IMap from '~/components/icons/i-map.vue'
 export default {
   name: 'IndexPage',
   components: {
     TheHeader,
     MainSlides,
-    Block1,
-    Block2,
-    Block3,
-    Block4,
     Block5,
     fModal,
-    TheFooter
+    TheFooter,
+    ITime,
+    IMap
   },
   data () {
     return {

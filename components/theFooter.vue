@@ -6,23 +6,23 @@
           <img
             src="~/assets/img/logo.png"
             alt=""
-            class=" w-full max-w-[120px] h-auto"
+            class="w-full max-w-[120px] h-auto"
           />
-          <nuxt-link to="/privacy" class="text-sm">Политика конфедициальности</nuxt-link>
         </div>
         <div class="flex flex-col gap-4">
           <span class="text-xl font-semibold">KIBERone</span>
           <ul class="text-sm flex flex-col gap-2">
+            <li>
+              <nuxt-link to="/contacts">Контакты</nuxt-link>
+            </li>
             <li>
               <a href="https://stav.kiber-one.com" target="_blank"
                 >Федеральный сайт</a
               >
             </li>
             <li>
-              <a
-                href="https://stav.kiber-one.com/o-kibershkole/"
-                target="_blank"
-                >О КиберШколе</a
+              <a href="/privacy" target="_blank" class="text-sm"
+                >Политика конфиденциальности</a
               >
             </li>
           </ul>
@@ -46,7 +46,7 @@
                 />
               </svg>
 
-              <a href="tel:88652915878">+7 (8652) 91 58 78</a>
+              <a href="tel:89887485878">+7 (988) 748-58-78</a>
             </li>
             <li class="flex items-center gap-2">
               <svg
@@ -66,7 +66,6 @@
 
               <span href="#">stavropol@kiber-one.com</span>
             </li>
-           
           </ul>
         </div>
         <div class="flex flex-col gap-4">
@@ -93,11 +92,7 @@
                 />
               </svg>
 
-              <a
-                href="https://2gis.ru/stavropol/firm/70000001050871846"
-                target="_blank"
-                >​Ленина, 282</a
-              >
+              <span>​​ул. Ленина, 282</span>
             </li>
             <li class="flex items-center gap-2">
               <svg
@@ -120,11 +115,7 @@
                 />
               </svg>
 
-              <a
-                href="https://2gis.ru/stavropol/firm/70000001064865342"
-                target="_blank"
-                >​50 лет ВЛКСМ, 68</a
-              >
+              <span>​ул. 50 лет ВЛКСМ, 68</span>
             </li>
           </ul>
         </div>
