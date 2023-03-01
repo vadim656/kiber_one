@@ -100,39 +100,6 @@
             ул. 50 лет ВЛКСМ, 68</span
           >
         </div>
-        <div class="flex flex-col gap-2 items-center justify-center">
-          <span>Расписание</span>
-          <div class="w-full flex justify-between sm:justify-start gap-2 sm:gap-8">
-            <div class="flex flex-col gap-2">
-              <span class="font-semibold">Суббота</span>
-              <div class="flex flex-col gap-1">
-                <span class="flex items-center gap-1"
-                  ><i-time />11.00 - 13.00</span
-                >
-                <span class="flex items-center gap-1"
-                  ><i-time />13.30 - 15.30</span
-                >
-                <span class="flex items-center gap-1"
-                  ><i-time />16.00 - 18.00</span
-                >
-              </div>
-            </div>
-            <div class="flex flex-col gap-2">
-              <span class="font-semibold">Воскресенье</span>
-              <div class="flex flex-col gap-1">
-                <span class="flex items-center gap-1"
-                  ><i-time />11.00 - 13.00</span
-                >
-                <span class="flex items-center gap-1"
-                  ><i-time />13.30 - 15.30</span
-                >
-                <span class="flex items-center gap-1"
-                  ><i-time />16.00 - 18.00</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <block-5 />
     </div>

@@ -93,8 +93,8 @@
       <block-2 id="block2" />
       <block-1 @scroll1="scroll1" @openmodal2="openmodal2" />
       <div class="flex justify-center items-center flex-col gap-8 w-full p-12 bg-yellow-400 rounded-3xl">
-        <span class="text-3xl sm:text-4xl text-center uppercase font-bold"
-          >Записаться на бесплатный пробный урок</span
+        <span class="text-3xl text-center  font-bold"
+          >Записаться на бесплатное пробное занятие</span
         >
         <div class="flex flex-col sm:flex-row w-full justify-center  gap-4">
           <input
@@ -157,7 +157,7 @@
               <span class=" text-purple-500 font-bold">ОТПРАВИТЬ</span>
             </button>
             <span v-if="succes == true" class="text-center text-sm"
-              >Спасибо! Наш менеджер перезвонит Вам в течение 15 минут.</span
+              >Спасибо! Наш менеджер перезвонит Вам в течение 30 минут.</span
             >
            
           </div>

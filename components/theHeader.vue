@@ -102,7 +102,18 @@
         <span class="block text-lg font-bold text-purple-500 text-center"
           >Бесплатная пробная неделя до 26 марта!</span
         >
-        <nuxt-link to="/contacts">Контакты</nuxt-link>
+        <nuxt-link to="/contacts" class="underline underline-offset-4">Контакты</nuxt-link>
+        <div class="flex flex-col gap-2 my-4">
+          <span class="w-full flex justify-start">г. Ставрополь</span>
+          <span class="flex items-center gap-1">
+            <i-map />
+            ул. Ленина, 282</span
+          >
+          <span class="flex items-center gap-1">
+            <i-map />
+            ул. 50 лет ВЛКСМ, 68</span
+          >
+        </div>
         <a
           href="tel:89887485878"
           class="text-white bg-purple-500 text-lg w-full text-center py-2 rounded-md"
